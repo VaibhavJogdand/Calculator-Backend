@@ -5,7 +5,7 @@ require("dotenv").config();
 const { MongoClient } = require("mongodb");
 const cors = require("cors"); // Import the cors package
 const app = express();
-const port = 4000;
+const port = 4000 || "https://render.com/docs/web-services#port-detection";
 const historyRoutes = require("./route/historyRoute"); // Import the historyRoutes.js file
 const { default: mongoose } = require("mongoose");
 
